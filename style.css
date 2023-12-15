@@ -1,0 +1,360 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bebas+Neue&family=Rubik+Pixels&family=Rubik:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: rubik;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2em ;
+}
+.nav-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+.nav-list a:hover{
+color: blue;
+}
+.nav-list a{
+    color: black;
+    font-weight: 600;
+}
+.first-button{
+    width:100px;
+    height: 40px;
+    background-color: rgb(198, 197, 197);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    position: relative;
+    /* margin-right: 4em; */
+    border-right-style: none;
+    
+}
+.secound-button{
+    background-color: whitesmoke;
+    width: 50px;
+    height: 40px;
+    font-size: 24px;
+    position:absolute;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+   
+}
+.nav-button{
+    /* margin-right:15em; */
+    padding-right: 11em;
+}
+.third-button button{
+    background-color: rgb(170, 93, 241);
+    width: 130px;
+    height: 40px;
+    font-size:20px ;
+    color: white;
+    border-radius: 7px;
+    font-weight: 500;
+    position: absolute;
+    top:1.6em;
+    right: 20px;
+}
+/* section begins */
+.grid-section-one{
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    align-items: center;
+    padding: 2em;
+    
+}
+.section-one-text{
+    
+    font-size: 25px;
+    grid-column: span 7;
+}
+.section-one-img img{
+    width: 100%;
+}
+.section-one-img img:hover{
+    transform:rotate(12deg);
+}
+
+.section-one-img{
+    grid-column:span 5;
+    transition: img  2s;
+}
+/* section1 button for gitub an ownloa */
+.but{
+    width:190px;
+    height: 42px;
+    background-color: white;
+    color: black;
+    margin-left: 0.7em;
+    box-shadow: 0.5px 1px 1px ;
+}
+
+.section-one-grid-container{
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    align-items: center;
+    padding: 2em;
+}
+.grid-item-one{
+    grid-column: span 2;
+}
+.grid-item-two{
+    grid-column: span 2;
+}
+.grid-item-three{
+    grid-column: span 2;
+}
+.grid-item-four{
+    grid-column: span 2;
+}
+.grid-item-five{
+    grid-column: span 2;
+}
+.grid-item-six{
+    grid-column: span 2;
+}
+
+.grid-section-two{
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    align-items: center;
+    padding: 2em;
+    
+}
+.section-two-text{
+    
+    font-size: 25px;
+    grid-column: span 7;
+}
+.section-two-img img{
+    width: 100%;
+}
+.section-two-img img:hover{
+    transform:rotate(12deg);
+}
+
+.section-two-img{
+    grid-column:span 5;
+    transition: img  2s;
+}
+.grid-section-two-check h4{
+    padding-top: 1em;
+}
+.grid-section-two p{
+    padding-top: 1em;
+}
+
+
+.grid-section-three{
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    align-items: center;
+    padding: 3em;
+    gap: 10em;
+    
+}
+.section-three-text{
+    
+    font-size: 25px;
+    grid-column: span 7;
+}
+.section-three-img img{
+    width: 100%;
+}
+.section-three-img img:hover{
+    transform:rotate(12deg);
+}
+
+.section-three-img{
+    grid-column:span 5;
+    transition: img  2s;
+}
+.grid-section-three-check h4{
+    padding-top: 1em;
+}
+.grid-section-three p{
+    padding-top: 1em;
+}
+.last-section-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 2em;
+    padding: 3em;
+}
+.last-section-text{
+grid-column: span 4;
+font-size: 20px;
+}
+.grid-last-item-one{
+    grid-column: span 4;
+    font-size: 20px;
+    padding-left: 13em;
+    
+}
+.last-section-secound-grid-text{
+grid-column: span 4;
+font-size: 20px;
+}
+/* meia queries */
+
+@media  only screen and (max-width:968px)
+{ .grid-section-one{
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+.nav-flex ul{
+    display: none;
+    
+}
+.nav-flex .third-button{
+    display: none;
+}
+
+.section-one-text{
+    grid-column: span 12;
+}
+.section-one-img img{
+    grid-column: span 12;
+    width: 320px;
+    height: auto;
+    padding: 4em 2em;
+    
+}
+
+.section-one-grid-container{
+    
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: auto;
+    font-size: 18px;
+    gap: 1.7em;
+    justify-content: center;
+    padding: 0em 0em 4em 6em;
+    width: 320px;
+   
+}
+.grid-item-one{
+    grid-column: span 6;
+    padding-top: 1.5em;
+    
+}
+.grid-item-two{
+    grid-column: span 6;
+    padding-top: 1.5em;
+}
+.grid-item-three{
+    grid-column: span 6;
+    padding-top: 1.5em;
+    
+}
+.grid-item-four{
+    grid-column: span 6;
+    padding-top: 1.5em;
+}
+.grid-item-five{
+    grid-column: span 6;
+    padding-top: 1.5em;
+}
+.grid-item-six{
+    grid-column: span 6;
+    padding-top: 1.5em;
+}
+    
+.grid-section-two{
+    grid-template-columns: repeat(12 ,1fr);
+    grid-template-rows: auto;
+    
+    
+}
+.section-two-text{
+    grid-column: span 12;
+}
+.section-two-img{
+    grid-column: span 12 ;
+    width: 320px;
+}
+
+
+
+.grid-section-three{
+    grid-template-columns: repeat(12 ,1fr);
+    grid-template-rows: auto;
+    padding-left:1em;
+    padding-top: 0;
+    align-items: center;
+    width: 320px;
+    
+}
+.section-three-text{
+    grid-column: span 12;
+    width: 320px;
+    
+}
+/* .section-three-text h1{
+    font-size: 20px;
+}
+.section-three-text p{
+    font-size: 12px;
+} */
+
+
+.section-three-img{
+    grid-column: span 12;
+    width:320px;   
+}
+.section-three-img img{
+    width: 340px;
+    padding: 1em 1em;
+}
+.grid-section-three-check{
+    width: 320px;
+}
+.last-section-grid{
+
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    width: 320px;
+    gap: 0;
+    font-size: 10px;
+    
+}
+.last-section-text{
+grid-column: span 12;
+width: 320px;
+
+padding-right: 2.8em;
+
+}
+.grid-last-item-one{
+    grid-column: span 12;
+    padding-left: 1em;
+    width: 320px;
+    font-size: 17px;
+    
+}
+/* .last-section-secound-grid-text{
+    grid-column: span 12;
+    width: 320px;
+    font-size: 10px;
+    
+    }
+ */
+
+}
+    
+/* @media  only screen and (max-width:768px)
+{ .grid-section-one{
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+} */
